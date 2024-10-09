@@ -20,6 +20,10 @@ ul {
     list-style-type: none;
 }
 
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -61,10 +65,6 @@ header nav {
     background-color: var(--light-secondary-color);
 }
 
-.hero-container .default-button {
-    margin-right: 1rem;
-}
-
 .outline-button {
     background-color: transparent;
     border: 1px solid var(--light-color);
@@ -92,6 +92,11 @@ header nav {
     justify-content: space-between;
 }
 
+#hero .hero-container .default-button {
+    margin-right: 1rem;
+}
+
+
 #hero .hero-container h1 {
     font-size: 3rem;
     font-weight: 500;
@@ -109,7 +114,7 @@ header nav {
     width: max-content;
 }
 
-#hero .hero-container div div {
+#hero .hero-container div .buttons {
     gap: 2rem;
 }
 
@@ -123,6 +128,7 @@ main .statistics {
 
 .statistics div {
     flex: 1;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -133,6 +139,60 @@ main .statistics {
     #hero .hero-container img {
         width: 50%;
     }
+
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        padding-inline: 2rem;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    #hero {
+        height: auto;
+    }
+
+    .outline-button {
+        padding: 0.6rem 1rem;
+    }
+    
+    .default-button {
+        padding: 0.6rem 1rem;
+    }
+
+    #hero .hero-container div p {
+        font-size: 12px;
+    }
+
+    .page-padding {
+        padding-inline: 2rem;
+    }
+
+    #hero .hero-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #hero .hero-container img {
+        width: 100%;
+    }
+
+    #hero .hero-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .statistics {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .statistics div {
+        width: 100%;
+    }
+    
 }
 
 

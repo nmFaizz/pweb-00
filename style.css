@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #1C1E53;
+    --secondary-color: #FCD980;
+    --light-color: #FFFFFF;
+    --light-secondary-color: #EEF4FA;
+}
+
+.page-padding {
+    padding-inline: 4rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--light-color);
+    padding-block: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.default-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.9rem 3rem;
+    border-radius: 6px;
+    width: max-content;
+}
+
+.default-button:hover {
+    background-color: var(--light-secondary-color);
+}
+
+.hero-container .default-button {
+    margin-right: 1rem;
+}
+
+.outline-button {
+    background-color: transparent;
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+    padding: 0.9rem 3rem;
+    border-radius: 6px;
+    width: max-content;
+}
+
+.outline-button:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+#hero {
+    background-color: var(--primary-color);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero .hero-container {
+    color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero .hero-container h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.hero-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#hero .hero-container .hero-content {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+#hero .hero-container div div {
+    gap: 2rem;
+}
+
+main .statistics {
+    display: flex;
+    background-color: var(--light-secondary-color);
+    justify-content: center;
+    padding-block: 3rem;
+    font-size: 2rem;
+}
+
+.statistics div {
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    #hero .hero-container h1 {
+        font-size: 2rem;
+    }
+
+    #hero .hero-container img {
+        width: 50%;
+    }
+}
+
+
+
+
+

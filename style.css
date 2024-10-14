@@ -169,7 +169,7 @@ main .statistics {
 
     #hero .hero-container div p {
         font-size: 12px;
-        line-height: 5px;
+        line-height: 1.5rem;
     }
 
     .page-padding {

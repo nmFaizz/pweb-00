@@ -151,6 +151,10 @@ main .statistics {
         display: none;
     }
 
+    .page-padding {
+        padding-inline: 1rem;
+    }
+
     #hero {
         height: auto;
     }
@@ -165,6 +169,7 @@ main .statistics {
 
     #hero .hero-container div p {
         font-size: 12px;
+        line-height: 5px;
     }
 
     .page-padding {
